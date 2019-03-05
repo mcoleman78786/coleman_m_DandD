@@ -2,28 +2,41 @@
 <html>
 <head>
 <meta charset="utf-8">
-	<title>Drag and Drop Puzzle Game</title>
+	<title>Puzzle Game</title>
+	<!-- created title for game -->
 	<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+	<!-- linked up font above -->
 	<link href="css/imageAnim.css" rel="stylesheet" type="text/css">
+	<!-- linked up css above -->
 </head>
 <body>
 	<header id="headLine">
-		<h1>headline</h1>
-		<p>subhead</p>
+		<!-- created header and start adding text to page -->
+		<h1>Play with Javascript Puzzle Game!</h1>
+		<!-- give a header for interest -->
+		<p>Play The puzzle game! Drag and drop!</p>
+		<!-- add a paragraph to tell the player what to do -->
 	</header>
 	<section id="game-boards">
 		<div class="puzzle-pieces"></div>
-		<div class="puzzle-board"></div>
+		<div class="puzzle-board">
+		<div class="drop-zone"></div>
+		<div class="drop-zone"></div>
+		<div class="drop-zone"></div>
+		<div class="drop-zone"></div>
+		</div>
+		<!-- Added the classes for puzzle pieces and board -->
 	</section>
-	<!-- <section id="wrapper" class="commonSettings"></section> -->
 
 	<footer>
 		<p>click thumb to change pieces!</p>
+		<!-- help the player with knowing what to do -->
 		<nav id="buttonHolder">
-			<img src="images/buttonZero.jpg" alt="thumbnail">
-			<img src="images/buttonOne.jpg" alt="thumbnail">
-	    <img src="images/buttonTwo.jpg" alt="thumbnail">
-			<img src="images/buttonThree.jpg" alt="thumbnail">
+			<img data-puzzleref="0" src="images/buttonZero.jpg" alt="thumbnail">
+			<img data-puzzleref="1" src="images/buttonOne.jpg" alt="thumbnail">
+	    	<img data-puzzleref="2" src="images/buttonTwo.jpg" alt="thumbnail">
+			<img data-puzzleref="3" src="images/buttonThree.jpg" alt="thumbnail">
+			<!-- inserthe buttons for thumbnail -->
 		</nav>
 	</footer>
 
