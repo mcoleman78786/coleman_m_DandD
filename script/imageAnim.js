@@ -19,6 +19,7 @@
 		//debugger;
 		pieces.forEach((piece, index) => {
 			let newPuzzlePiece =`<img draggable id ="piece${index}" class="puzzle-image" src="images/${piece + pictureIndex}.jpg" alt="thumbnail">`;
+			// give class for puzzle images
 
 			piecesBoard.innerHTML += newPuzzlePiece;
 			// debugger;
@@ -35,10 +36,19 @@
 
 	function initDrag() {
 		piecesBoard.querySelectorAll('img').forEach(img => {
+			// queryselectorall inspect img
 			img.addEventListener("dragstart", function(e) {
-				console.log('dragging it')
+       {
+             console = console || {};
+             console.log = function(){};
+}
+				function removePlayingClass(event) {
+		// debugger;
+	}
+				// debugger;
 
 				e.dataTransfer.setData("text/plain", this.id);
+				// inspect to see if all working
 	    });
 	});
 }
@@ -46,18 +56,20 @@
 	dropZones.forEach(zone => {
 		zone.addEventListener("dragover", function(e) {
 			e.preventDefault();
-			console.log("dragged pieces over");
+			console = console || {};
+             console.log = function(){};
 		});
 
 		zone.addEventListener("drop", function(e) {
 			e.preventDefault();
-			console.log("dropped");
-			let firstpuzDrop = e.target;
-				while (firstpuzDrop !== 0 && !firstpuzDrop.classList.contains("drop-zone")) {
-				firstpuzDrop = firstpuzDrop.parentNode;
+			console = console || {};
+             console.log = function(){};
+			let puzzleDrop = e.target;
+				while (puzzleDrop !== 0 && ! puzzleDrop.classList.contains("drop-zone")) {
+				puzzleDrop = puzzleDrop.parentNode;
 			}
 
-			if (firstpuzDrop && firstpuzDrop.childNodes.length > 0) {
+			if (puzzleDrop && puzzleDrop.childNodes.length > 0) {
 				return false;
 				e.preventDefault();
 			}
@@ -66,17 +78,21 @@
 		});
 	});
 
+	// reset puzzle piece by using function below
 	function resetPuzzlePieces() {
+		// 
 		// swap out all the images when clicking on bottom button
 		//debugger;
 		piecesBoard.innerHTML = "";
 
 		createPuzzlePieces(this.dataset.puzzleref); 
-		var images = document.getElementsByClassName("puzzle-image");
+		var img = document.getElementsByClassName("puzzle-image");
 
-    		while(images.length > 4){
-    			
-        	images[4].parentNode.removeChild(images[4]);
+    		
+    		while (img.length = 0){
+    			// help puzzle show up on the left in the box
+
+        	img[0].parentNode.removeChild(img[0]);
     }
 }
 
