@@ -10,6 +10,7 @@ body {
 	font-family: 'Luckiest Guy', sans-serif;
 	font-size:16px;
 }
+/*background image*/
 
 #game-boards {
 	width: 100%;
@@ -26,6 +27,7 @@ body {
 	overflow: hidden;
 }
 
+/* dectoration the puzzle pieces and the board*/
 .puzzle-pieces {
 	width: 300px;
 	margin-right: 20px;
@@ -49,6 +51,8 @@ body {
 	float: left;
 	clear: both;
 }
+
+/*Fix the posision of the puzzle images*/
 
 .drop-zone {
 	width: 49.5%;
@@ -99,3 +103,5 @@ footer {
 #buttonHolder img:hover {
 	opacity:.5;
 }
+
+/*decortate button holder*/
